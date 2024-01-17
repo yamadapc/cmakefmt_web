@@ -3,7 +3,9 @@ name = "cmakefmt_web"
 version = "0.1.0"
 edition = "2021"
 homepage = "https://github.com/yamadapc/cmakefmt_web"
+repository = "https://github.com/yamadapc/cmakefmt_web"
 license = "MIT"
+description = "WASM package for github.com/yamadapc/cmakefmt"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
