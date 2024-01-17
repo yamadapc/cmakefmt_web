@@ -3,6 +3,8 @@ This is a WASM package for https://github.com/yamadapc/cmakefmt.
 
 It's source code is at https://github.com/yamadapc/cmakefmt_web.
 
+Published on NPM as https://www.npmjs.com/package/cmakefmt_web
+
 ## Consuming JS package
 ```tsx
 const inputString = '';
