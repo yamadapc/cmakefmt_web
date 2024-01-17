@@ -1,0 +1,4 @@
+## Build wasm package
+```
+make
+```
