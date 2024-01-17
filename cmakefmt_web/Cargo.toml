@@ -8,5 +8,5 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 anyhow = "1.0.79"
-cmakefmt = { version = "*", path = ".." }
+cmakefmt = "*"
 wasm-bindgen = "0.2.89"
