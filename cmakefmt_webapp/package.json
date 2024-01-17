@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "cmakefmt_web": "file:../webapp/pkg",
+    "cmakefmt_web": "file:../cmakefmt_web/pkg",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
