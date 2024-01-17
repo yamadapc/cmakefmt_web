@@ -2,11 +2,13 @@
 name = "cmakefmt_web"
 version = "0.1.0"
 edition = "2021"
+homepage = "https://github.com/yamadapc/cmakefmt_web"
+license = "MIT"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 anyhow = "1.0.79"
-cmakefmt = "*"
+cmakefmt = "0.1.11"
 wasm-bindgen = "0.2.89"

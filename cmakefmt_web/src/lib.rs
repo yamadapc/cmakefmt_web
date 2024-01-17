@@ -5,12 +5,18 @@ use wasm_bindgen::prelude::*;
 #[wasm_bindgen]
 pub struct ParsedDoc {
     doc: CMakeDocument,
+    unparsed_input: String,
 }
 
 #[wasm_bindgen]
 pub fn parse_doc(input: &str) -> Result<ParsedDoc, JsError> {
-    let (_input, doc) = cmake_parser(input)?;
-    Ok(ParsedDoc { doc })
+    let (input, doc) = cmake_parser(input)?;
+    Ok(ParsedDoc { doc, unparsed_input: input.to_string() })
+}
+
+#[wasm_bindgen]
+pub fn is_completely_parsed(doc: &ParsedDoc) -> bool {
+    doc.unparsed_input.is_empty()
 }
 
 #[wasm_bindgen]
